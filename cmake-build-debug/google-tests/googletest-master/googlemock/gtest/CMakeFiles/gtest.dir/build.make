@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Tsinin\Desktop\Programmes\binomialHeap
+CMAKE_SOURCE_DIR = C:\Users\Lion\CLionProjects\BinomialHeap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.make
@@ -59,16 +59,16 @@ include google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/fla
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/includes_CXX.rsp
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: ../google-tests/googletest-master/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gtest.dir\src\gtest-all.cc.obj -c C:\Users\Tsinin\Desktop\Programmes\binomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gtest.dir\src\gtest-all.cc.obj -c C:\Users\Lion\CLionProjects\BinomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc
 
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tsinin\Desktop\Programmes\binomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc > CMakeFiles\gtest.dir\src\gtest-all.cc.i
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lion\CLionProjects\BinomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc > CMakeFiles\gtest.dir\src\gtest-all.cc.i
 
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tsinin\Desktop\Programmes\binomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc -o CMakeFiles\gtest.dir\src\gtest-all.cc.s
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lion\CLionProjects\BinomialHeap\google-tests\googletest-master\googletest\src\gtest-all.cc -o CMakeFiles\gtest.dir\src\gtest-all.cc.s
 
 # Object files for target gtest
 gtest_OBJECTS = \
@@ -80,9 +80,9 @@ gtest_EXTERNAL_OBJECTS =
 lib/libgtestd.a: google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
 lib/libgtestd.a: google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make
 lib/libgtestd.a: google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\..\lib\libgtestd.a"
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -P CMakeFiles\gtest.dir\cmake_clean_target.cmake
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\..\lib\libgtestd.a"
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -P CMakeFiles\gtest.dir\cmake_clean_target.cmake
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build: lib/libgtestd.a
@@ -90,10 +90,10 @@ google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build: lib/
 .PHONY : google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean:
-	cd /d C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -P CMakeFiles\gtest.dir\cmake_clean.cmake
+	cd /d C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest && $(CMAKE_COMMAND) -P CMakeFiles\gtest.dir\cmake_clean.cmake
 .PHONY : google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Tsinin\Desktop\Programmes\binomialHeap C:\Users\Tsinin\Desktop\Programmes\binomialHeap\google-tests\googletest-master\googletest C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest C:\Users\Tsinin\Desktop\Programmes\binomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Lion\CLionProjects\BinomialHeap C:\Users\Lion\CLionProjects\BinomialHeap\google-tests\googletest-master\googletest C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest C:\Users\Lion\CLionProjects\BinomialHeap\cmake-build-debug\google-tests\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : google-tests/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 

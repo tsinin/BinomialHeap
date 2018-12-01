@@ -17,7 +17,6 @@ namespace {
         Vector<int> testVector;
         std::multiset<int> testSet;
         testFixture() {
-            binomialHeap<int> heap; // could make here a make method
 
         }
     };
@@ -147,7 +146,7 @@ TEST_F(testFixture, randomBigTest1) {
     ASSERT_GE(2, ((double)end - start) / (double)(CLOCKS_PER_SEC));
 }
 
-TEST_F(testFixture, randomBigTes2) {
+TEST_F(testFixture, randomBigTest2) {
     time_t start = clock(), end;
 
     for(int i = 0; i < 1000000; ++i) {

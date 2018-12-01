@@ -472,15 +472,15 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/Tsinin/Desktop/Programmes/binomialHeap/Tests/Vector.h
+C:/Users/Lion/CLionProjects/BinomialHeap/Tests/Vector.h
 
-C:/Users/Tsinin/Desktop/Programmes/binomialHeap/Tests/binomialHeap.h
+C:/Users/Lion/CLionProjects/BinomialHeap/Tests/binomialHeap.h
 Vector.h
-C:/Users/Tsinin/Desktop/Programmes/binomialHeap/Tests/Vector.h
+C:/Users/Lion/CLionProjects/BinomialHeap/Tests/Vector.h
 memory
 -
 
-C:/Users/Tsinin/Desktop/Programmes/binomialHeap/Tests/test.cpp
+C:/Users/Lion/CLionProjects/BinomialHeap/Tests/test.cpp
 ctime
 -
 set
@@ -492,5 +492,5 @@ gtest/gtest.h
 gmock/gmock.h
 -
 binomialHeap.h
-C:/Users/Tsinin/Desktop/Programmes/binomialHeap/Tests/binomialHeap.h
+C:/Users/Lion/CLionProjects/BinomialHeap/Tests/binomialHeap.h
 

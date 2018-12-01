@@ -117,11 +117,13 @@ public:
         firstNode = begin->next;
         if(firstNode)
             firstNode->prev = nullptr;
+        otherHeap.firstNode = nullptr;
     }
     Pointer* insert(Key x) {
         binomialHeap<Key> newHeap;
         newHeap.firstNode = new node(x);
         Pointer* pointer = new Pointer(newHeap.firstNode);
+        Pointer* par = new Pointer(nullptr);
         newHeap.firstNode->backPtr = pointer;
         this->merge(newHeap);
         return pointer;
@@ -194,10 +196,29 @@ public:
             decreaseKey(pointer, newKey);
         }
     }
-    binomialHeap() {};
-    ~binomialHeap() {};
+    binomialHeap() = default;
+    ~binomialHeap() {
+        while(firstNode != nullptr) {
+            node* temp = firstNode->next;
+            destruct(firstNode);
+            firstNode = temp;
+        }
+    };
 private:
     node* firstNode = nullptr;
+    void destruct(node* x) {
+        if(x == nullptr)
+            return;
+        node* child = x->firstChild;
+        while(child != x->lastChild) {
+            node* temp = child->next;
+            destruct(child);
+            child = temp;
+        }
+        destruct(child);
+        delete x->backPtr;
+        delete x;
+    }
     node* merge(node* first, node* second) {
         if(first->data >= second->data) {
             node* temp = first;
