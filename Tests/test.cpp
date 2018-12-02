@@ -88,6 +88,17 @@ TEST_F(testFixture, smallTest4) {
     ASSERT_EQ(heap.extract_min(), 4);
 }
 
+TEST_F(testFixture, smallTest5) {
+    auto p = heap.insert(1);
+    heap.change(p, 2);
+    int* t = new int;
+    ASSERT_EQ(heap.get_min(), 2);
+    heap.change(p, 3);
+    ASSERT_EQ(heap.get_min(), 3);
+    heap.change(p, 4);
+    ASSERT_EQ(heap.extract_min(), 4);
+}
+
 TEST_F(testFixture, simpleTest1) {
     for(int i = 400000; i >= 0; --i)
         heap.insert(i);

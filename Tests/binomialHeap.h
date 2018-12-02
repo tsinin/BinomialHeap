@@ -122,8 +122,13 @@ public:
     Pointer* insert(Key x) {
         binomialHeap<Key> newHeap;
         newHeap.firstNode = new node(x);
-        Pointer* pointer = new Pointer(newHeap.firstNode);
-        Pointer* par = new Pointer(nullptr);
+        Pointer* pointer;
+        if(ptrForIncrease == nullptr)
+            pointer = new Pointer(newHeap.firstNode);
+        else {
+            pointer = ptrForIncrease;
+            pointer->element = newHeap.firstNode;
+        }
         newHeap.firstNode->backPtr = pointer;
         this->merge(newHeap);
         return pointer;
@@ -176,8 +181,8 @@ public:
             minElement->next->prev = nullptr;
         } else
             firstNode = nullptr;
-
-        delete minElement->backPtr;
+        if(ptrForIncrease == nullptr)
+            delete minElement->backPtr;
         delete minElement;
         this->merge(secondHeap);
         return ans;
@@ -185,13 +190,14 @@ public:
     void erase(Pointer* pointer) {
         pointer->element->smallest = true;
         decreaseKey(pointer, pointer->element->data);
-        delete pointer;
         this->extract_min();
     }
     void change(Pointer* pointer, Key newKey) {
         if(newKey > pointer->element->data) {
+            ptrForIncrease = pointer;
             this->erase(pointer);
-            pointer = insert(newKey);
+            insert(newKey);
+            ptrForIncrease = nullptr;
         } else {
             decreaseKey(pointer, newKey);
         }
@@ -205,6 +211,7 @@ public:
         }
     };
 private:
+    Pointer* ptrForIncrease = nullptr;
     node* firstNode = nullptr;
     void destruct(node* x) {
         if(x == nullptr)
