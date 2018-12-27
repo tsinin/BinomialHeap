@@ -99,6 +99,19 @@ TEST_F(testFixture, smallTest5) {
     ASSERT_EQ(heap.extract_min(), 4);
 }
 
+TEST_F(testFixture, mergeTest1) {
+    binomialHeap<int> heap1;
+    heap.insert(1);
+    heap.insert(3);
+    heap1.insert(2);
+    heap1.insert(4);
+    heap.merge(heap1);
+    ASSERT_EQ(heap.extract_min(), 1);
+    ASSERT_EQ(heap.extract_min(), 2);
+    ASSERT_EQ(heap.extract_min(), 3);
+    ASSERT_EQ(heap.extract_min(), 4);
+}
+
 TEST_F(testFixture, simpleTest1) {
     for(int i = 400000; i >= 0; --i)
         heap.insert(i);
@@ -162,7 +175,7 @@ TEST_F(testFixture, randomBigTest2) {
 
     for(int i = 0; i < 1000000; ++i) {
         int operation = rand() % 2;
-        if(operation && !testSet.size() || testSet.size() < 10000)
+        if(operation && !testSet.size() || testSet.size() < 100000)
             operation = 0;
         if(operation) {
             ASSERT_EQ(heap.extract_min(), *(testSet.begin()));
@@ -182,7 +195,7 @@ TEST_F(testFixture, randomBigTest3) {
 
     for(int i = 0; i < 1000000; ++i) {
         int operation = rand() % 2;
-        if(operation  && !testSet.size() || testSet.size() < 70000)
+        if(operation  && !testSet.size() || testSet.size() < 700000)
             operation = 0;
         if(operation) {
             ASSERT_EQ(heap.extract_min(), *(testSet.begin()));
